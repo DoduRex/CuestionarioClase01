@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider Bootstrap + Sección Dividida</title>
+        <link rel="stylesheet" href="../encabezado.css">
+    <link rel="stylesheet" href="../pie_pagina.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -149,6 +151,25 @@
     </style>
 </head>
 <body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../image/imagen_trans.png" alt="Logo Instituto" class="logo-img">
+                <div>
+                    <div class="logo-text">Instituto Superior Tecnológico Villa Maria</div>
+                    <div class="instituto-nombre">"Formando líderes del mañana"</div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#" style="color: #ffcc00;">Perfil</a></li>
+                    <li><a href="../Pagina_Tareas_Academicas/index.html">Tareas Académicas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
 <!-- Slider Section -->
 <section class="custom-slider">
@@ -543,6 +564,33 @@
     </div>
     <pre></pre>
 </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Instituto Tecnológico</h3>
+                <p>Formando profesionales de excelencia desde 1985.</p>
+                <p>Comprometidos con la educación de calidad.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📍 Av. Universidad #123, Ciudad</p>
+                <p>📞 +1 (555) 123-4567</p>
+                <p>📧 info@instituto.edu</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <a href="#">Portal Estudiantil</a>
+                <a href="#">Biblioteca Virtual</a>
+                <a href="#">Calendario Académico</a>
+                <a href="#">Bolsa de Trabajo</a>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2023 Instituto Tecnológico. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
