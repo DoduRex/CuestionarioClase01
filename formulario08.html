@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo de Equipos - Modelo de Tuckman</title>
+    <link rel="stylesheet" href="encabezado.css">
+    <link rel="stylesheet" href="pie_pagina.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4e54c8;
+            --secondary-color: #8f94fb;
+            --accent-color: #ff6b6b;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+        
+        .custom-slider {
+            padding: 60px 0;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+        
+        .slider-content {
+            display: flex;
+            align-items: center;
+            min-height: 400px;
+        }
+        
+        .text-content {
+            padding: 30px;
+        }
+        
+        .img-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .img-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .img-content img:hover {
+            transform: scale(1.03);
+        }
+        
+        .carousel-control-prev, .carousel-control-next {
+            width: 5%;
+        }
+        
+        .content-section {
+            padding: 80px 0;
+        }
+        
+        .content-container {
+            display: flex;
+            align-items: center;
+            min-height: 400px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+        
+        .content-text {
+            padding: 40px;
+        }
+        
+        .content-image {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .content-image img {
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            border: none;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+        
+        @media (max-width: 768px) {
+            .slider-content, .content-container {
+                flex-direction: column;
+            }
+            
+            .text-content, .content-text {
+                padding: 20px;
+            }
+            
+            .img-content, .content-image {
+                padding: 15px;
+            }
+            
+            .content-image img {
+                height: 300px;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="image/imagen_trans.png" alt="Logo Instituto" class="logo-img">
+                <div>
+                    <div class="logo-text">Instituto Superior Tecnológico Villa Maria</div>
+                    <div class="instituto-nombre">"Formando líderes del mañana"</div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://dodurex.github.io/CuestionarioClase02/credencial.html">Inicio</a></li>
+                    <li><a href="https://dodurex.github.io/CuestionarioClase02/Pagina_Perfil/perfil.html" style="color: #ffcc00;">Perfil</a></li>
+                    <li><a href="https://dodurex.github.io/CuestionarioClase02/Pagina_Tareas_Academicas/index.html">Tareas Académicas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!-- Slider Section -->
+<section class="custom-slider">
+    <div class="container">
+        <div id="textImageCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#textImageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#textImageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#textImageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="slider-content">
+                        <div class="col-md-6 text-content">
+                            <h2>Modelo de Tuckman</h2>
+                            <p>El modelo de Tuckman describe las cinco etapas fundamentales que atraviesan los equipos para alcanzar su máximo potencial: Formación, Conflicto, Normalización, Desempeño y Finalización.</p>
+                            <a href="#" class="btn btn-light">Descubrir más</a>
+                        </div>
+                        <div class="col-md-6 img-content">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80" alt="Trabajo en equipo" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="slider-content">
+                        <div class="col-md-6 text-content">
+                            <h2>Etapas del Desarrollo</h2>
+                            <p>Cada etapa del desarrollo de equipos presenta desafíos específicos y requiere diferentes enfoques de liderazgo para guiar al equipo hacia la productividad y efectividad.</p>
+                            <a href="#" class="btn btn-light">Ver etapas</a>
+                        </div>
+                        <div class="col-md-6 img-content">
+                            <img src="https://images.unsplash.com/photo-1551836026-d5c8c2a6d7b1?auto=format&fit=crop&w=600&q=80" alt="Reunión de equipo" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="slider-content">
+                        <div class="col-md-6 text-content">
+                            <h2>Liderazgo Adaptativo</h2>
+                            <p>Un líder efectivo debe adaptar su estilo según la etapa de desarrollo en la que se encuentra el equipo, proporcionando la dirección y apoyo necesarios en cada fase.</p>
+                            <a href="#" class="btn btn-light">Conocer más</a>
+                        </div>
+                        <div class="col-md-6 img-content">
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80" alt="Liderazgo" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Controles -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#textImageCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#textImageCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Content Section -->
+<section class="content-section">
+    <!-- Sección 1 - Conceptos Fundamentales -->
+    <div class="container">
+        <h2 class="section-title">Sección 1 - Conceptos Fundamentales</h2>
+        
+        <!-- Pregunta 1 -->
+        <div class="content-container">
+            <div class="col-md-6 content-text">
+                <h4><span class="badge rounded-circle bg-primary fs-6">1</span> ¿Qué diferencia existe entre un grupo de trabajo y un equipo de trabajo según el enfoque del documento?</h4>
+                <p>Un <strong>grupo de trabajo</strong> está compuesto por individuos que trabajan de forma independiente hacia un objetivo común, mientras que un <strong>equipo de trabajo</strong> implica interdependencia, colaboración activa y responsabilidad compartida. En los equipos, los miembros se complementan, coordinan esfuerzos y son mutuamente responsables de los resultados, generando una sinergia que va más allá de la suma de las contribuciones individuales.</p>
+            </div>
+            <div class="col-md-6 content-image">
+                <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&w=600&q=80" alt="Grupo vs Equipo" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="content-container">
+            <div class="col-md-6 content-image">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80" alt="Etapas de desarrollo" class="img-fluid">
+            </div>
+            <div class="col-md-6 content-text">
+                <h4><span class="badge rounded-circle bg-primary fs-6">2</span> ¿Cuáles son las cinco etapas del desarrollo de equipos propuestas por Bruce Tuckman y qué propósito cumple cada una?</h4>
+                <p>
+                    <strong>1. Formación (Forming):</strong> Los miembros se conocen, establecen relaciones iniciales y comprenden el propósito del equipo.<br><br>
+                    <strong>2. Conflicto (Storming):</strong> Surgen desacuerdos sobre roles, métodos y liderazgo, necesarios para definir la identidad del equipo.<br><br>
+                    <strong>3. Normalización (Norming):</strong> Se establecen normas, roles y procesos de trabajo, creando cohesión y colaboración.<br><br>
+                    <strong>4. Desempeño (Performing):</strong> El equipo funciona de manera efectiva, centrándose en alcanzar objetivos con alta productividad.<br><br>
+                    <strong>5. Finalización (Adjourning):</strong> Se disuelve el equipo tras cumplir sus objetivos, reconociendo logros y aprendizajes.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="content-container">
+            <div class="col-md-6 content-text">
+                <h4><span class="badge rounded-circle bg-primary fs-6">3</span> Explica por qué comprender las etapas del desarrollo de equipos es esencial para un líder organizacional.</h4>
+                <p>Comprender las etapas del desarrollo de equipos permite al líder adaptar su estilo de liderazgo según las necesidades específicas de cada fase. En la Formación, proporciona dirección clara; en el Conflicto, media y facilita; en la Normalización, apoya la autonomía; en el Desempeño, delega y empodera; y en la Finalización, reconoce logros. Esta comprensión evita frustraciones, anticipa desafíos y acelera el camino hacia la efectividad del equipo.</p>
+            </div>
+            <div class="col-md-6 content-image">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80" alt="Liderazgo organizacional" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección 2 - Etapas del Modelo de Tuckman -->
+    <div class="container">
+        <h2 class="section-title">Sección 2 - Etapas del Modelo de Tuckman</h2>
+        
+        <!-- Pregunta 4 -->
+        <div class="content-container">
+            <div class="col-md-6 content-image">
+                <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=600&q=80" alt="Etapa de formación" class="img-fluid">
+            </div>
+            <div class="col-md-6 content-text">
+                <h4><span class="badge rounded-circle bg-primary fs-6">4</span> En la etapa de Formación (Forming), ¿qué características predominan entre los miembros y cuál es el rol del líder?</h4>
+                <p>En la etapa de Formación predominan la <strong>cortesía, la cautela y la dependencia</strong>. Los miembros son educados pero reservados, evitan conflictos y buscan orientación. El <strong>líder debe ser directivo</strong>, estableciendo objetivos claros, definiendo roles, explicando procesos y creando un ambiente seguro. Su rol es estructurar el trabajo, facilitar las presentaciones y fomentar la confianza inicial mediante una comunicación abierta y accesible.</p>
+            </div>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="content-container">
+            <div class="col-md-6 content-text">
+                <h4><span class="badge rounded-circle bg-primary fs-6">5</span> Durante la etapa de Conflicto (Storming), ¿qué tipo de tensiones pueden surgir y cómo debe gestionarlas el líder para evitar el estancamiento del equipo?</h4>
+                <p>En el Storming surgen tensiones por <strong>diferencias en estilos de trabajo, competencia por influencia, desacuerdos sobre objetivos y frustración con el progreso</strong>. El líder debe actuar como <strong>facilitador y mediador</strong>, normalizando el conflicto como parte natural del desarrollo, fomentando la comunicación abierta, estableciendo procesos para resolver desacuerdos y reenfocando al equipo en objetivos comunes. Debe equilibrar la expresión de diferencias con el mantenimiento del respeto mutuo.</p>
+            </div>
+            <div class="col-md-6 content-image">
+                <img src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?auto=format&fit=crop&w=600&q=80" alt="Resolución de conflictos" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Pregunta 6 -->
+        <div class="content-container">
+            <div class="col-md-6 content-image">
+                <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=600&q=80" alt="Normalización" class="img-fluid">
+            </div>
+            <div class="col-md-6 content-text">
+                <h4><span class="badge rounded-circle bg-primary fs-6">6</span> Describe los indicadores que evidencian que un equipo ha alcanzado la etapa de Normalización (Norming).</h4>
+                <p>Los indicadores del Norming incluyen: <strong>establecimiento de normas y procesos aceptados por todos, desarrollo de cohesión grupal, resolución constructiva de conflictos, comunicación abierta y efectiva, distribución clara de responsabilidades, y emergencia de confianza mutua</strong>. Los miembros muestran mayor flexibilidad, se apoyan entre sí y comparten un sentido de identidad como equipo. El consenso reemplaza a la imposición y prevalece un ambiente de colaboración.</p>
+            </div>
+        </div>
+
+        <!-- Pregunta 7 -->
+        <div class="content-container">
+            <div class="col-md-6 content-text">
+                <h4><span class="badge rounded-circle bg-primary fs-6">7</span> ¿Qué distingue a un equipo en la etapa de Desempeño (Performing) de las etapas anteriores en términos de productividad y liderazgo?</h4>
+                <p>En el Performing, el equipo alcanza <strong>alta productividad con mínima supervisión</strong>, funciona de manera autónoma y se enfoca en la excelencia. A diferencia de etapas anteriores, los miembros están <strong>altamente motivados, interdependientes y capaces de resolver problemas complejos colectivamente</strong>. El liderazgo se transforma en <strong>delegativo y facilitador</strong>: el líder elimina obstáculos, proporciona recursos y empodera al equipo, dedicándose más a la estrategia que a la supervisión operativa.</p>
+            </div>
+            <div class="col-md-6 content-image">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80" alt="Alto desempeño" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Pregunta 8 -->
+        <div class="content-container">
+            <div class="col-md-6 content-image">
+                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=600&q=80" alt="Finalización" class="img-fluid">
+            </div>
+            <div class="col-md-6 content-text">
+                <h4><span class="badge rounded-circle bg-primary fs-6">8</span> ¿Qué acciones deben tomarse en la etapa de Finalización (Adjourning) para cerrar el ciclo de manera efectiva y positiva?</h4>
+                <p>En el Adjourning, es crucial: <strong>reconocer y celebrar los logros alcanzados, realizar una evaluación reflexiva de aprendizajes y áreas de mejora, documentar mejores prácticas para futuros equipos, facilitar la transición de miembros a nuevos proyectos, y proporcionar cierre emocional</strong>. El líder debe gestionar posibles sentimientos de pérdida, destacar las competencias desarrolladas y mantener conexiones profesionales. Un cierre adecuado fortalece la cultura organizacional y prepara a los miembros para futuros desafíos.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección 3 - Aplicación y Análisis -->
+    <div class="container">
+        <h2 class="section-title">Sección 3 - Aplicación y Análisis</h2>
+        
+        <!-- Pregunta 9 -->
+        <div class="content-container">
+            <div class="col-md-6 content-text">
+                <h4><span class="badge rounded-circle bg-primary fs-6">9</span> Según el documento, ¿qué factores pueden reiniciar el ciclo de desarrollo de un equipo, y cómo puede aprovecharse la experiencia previa para avanzar más rápido?</h4>
+                <p>El ciclo puede reiniciarse por <strong>cambios significativos en la composición del equipo, modificación de objetivos, redefinición de roles, cambios en el liderazgo o crisis externas</strong>. La experiencia previa permite avanzar más rápido mediante: <strong>aplicación consciente de lecciones aprendidas, establecimiento rápido de normas efectivas, anticipación de conflictos típicos y desarrollo de mecanismos de comunicación probados</strong>. Equipos experimentados suelen pasar más rápido por Forming y Storming, llegando antes al Performing.</p>
+            </div>
+            <div class="col-md-6 content-image">
+                <img src="https://images.unsplash.com/photo-1551836026-d5c8c2a6d7b1?auto=format&fit=crop&w=600&q=80" alt="Ciclo de desarrollo" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Pregunta 10 -->
+        <div class="content-container">
+            <div class="col-md-6 content-image">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80" alt="Caso práctico" class="img-fluid">
+            </div>
+            <div class="col-md-6 content-text">
+                <h4><span class="badge rounded-circle bg-primary fs-6">10</span> Analiza el caso práctico del "Equipo X en el Proyecto Y": identifica una acción clave del líder en cada etapa que contribuyó al éxito del proyecto.</h4>
+                <p>
+                    <strong>Forming:</strong> El líder organizó sesiones de team building para acelerar la confianza y estableció un charter de equipo con objetivos claros.<br><br>
+                    <strong>Storming:</strong> Implementó un proceso estructurado para resolver conflictos, mediando cuando surgieron desacuerdos sobre prioridades.<br><br>
+                    <strong>Norming:</strong> Facilitó la creación de acuerdos de trabajo colaborativo y celebró los primeros éxitos para reforzar la cohesión.<br><br>
+                    <strong>Performing:</strong> Delegó autoridad en subequipos especializados y eliminó barreras burocráticas que impedían el progreso.<br><br>
+                    <strong>Adjourning:</strong> Organizó una ceremonia de reconocimiento y documentó lecciones aprendidas para proyectos futuros.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Instituto Tecnológico</h3>
+                <p>Formando profesionales de excelencia desde 1985.</p>
+                <p>Comprometidos con la educación de calidad.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📍 Av. Universidad #123, Ciudad</p>
+                <p>📞 +1 (555) 123-4567</p>
+                <p>📧 info@instituto.edu</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <a href="#">Portal Estudiantil</a>
+                <a href="#">Biblioteca Virtual</a>
+                <a href="#">Calendario Académico</a>
+                <a href="#">Bolsa de Trabajo</a>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2023 Instituto Tecnológico. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

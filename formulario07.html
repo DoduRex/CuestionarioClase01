@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega de Poder y Liderazgo Efectivo</title>
+    <link rel="stylesheet" href="encabezado.css">
+    <link rel="stylesheet" href="pie_pagina.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4e54c8;
+            --secondary-color: #8f94fb;
+            --accent-color: #ff6b6b;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+        
+        .custom-slider {
+            padding: 60px 0;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+        
+        .slider-content {
+            display: flex;
+            align-items: center;
+            min-height: 400px;
+        }
+        
+        .text-content {
+            padding: 30px;
+        }
+        
+        .img-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .img-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .img-content img:hover {
+            transform: scale(1.03);
+        }
+        
+        .carousel-control-prev, .carousel-control-next {
+            width: 5%;
+        }
+        
+        .content-section {
+            padding: 80px 0;
+        }
+        
+        .content-container {
+            display: flex;
+            align-items: center;
+            min-height: 400px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+        
+        .content-text {
+            padding: 40px;
+        }
+        
+        .content-image {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .content-image img {
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            border: none;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+        
+        @media (max-width: 768px) {
+            .slider-content, .content-container {
+                flex-direction: column;
+            }
+            
+            .text-content, .content-text {
+                padding: 20px;
+            }
+            
+            .img-content, .content-image {
+                padding: 15px;
+            }
+            
+            .content-image img {
+                height: 300px;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="image/imagen_trans.png" alt="Logo Instituto" class="logo-img">
+                <div>
+                    <div class="logo-text">Instituto Superior Tecnológico Villa Maria</div>
+                    <div class="instituto-nombre">"Formando líderes del mañana"</div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://dodurex.github.io/CuestionarioClase02/credencial.html">Inicio</a></li>
+                    <li><a href="https://dodurex.github.io/CuestionarioClase02/Pagina_Perfil/perfil.html" style="color: #ffcc00;">Perfil</a></li>
+                    <li><a href="https://dodurex.github.io/CuestionarioClase02/Pagina_Tareas_Academicas/index.html">Tareas Académicas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!-- Slider Section -->
+<section class="custom-slider">
+    <div class="container">
+        <div id="textImageCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#textImageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#textImageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#textImageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="slider-content">
+                        <div class="col-md-6 text-content">
+                            <h2>Entrega de Poder en el Liderazgo</h2>
+                            <p>La entrega de poder va más allá de la simple delegación de tareas; implica transferir autoridad, responsabilidad y autonomía para empoderar a los equipos y liberar su máximo potencial.</p>
+                            <a href="#" class="btn btn-light">Descubrir más</a>
+                        </div>
+                        <div class="col-md-6 img-content">
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80" alt="Liderazgo empoderador" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="slider-content">
+                        <div class="col-md-6 text-content">
+                            <h2>Estilos de Liderazgo</h2>
+                            <p>Desde el liderazgo autocrático hasta el transformacional, cada estilo impacta de manera diferente en la dinámica organizacional y el desarrollo del potencial humano.</p>
+                            <a href="#" class="btn btn-light">Ver estilos</a>
+                        </div>
+                        <div class="col-md-6 img-content">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80" alt="Estilos de liderazgo" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="slider-content">
+                        <div class="col-md-6 text-content">
+                            <h2>Trabajo en Equipo Efectivo</h2>
+                            <p>El éxito del trabajo en equipo depende de condiciones fundamentales como la claridad de propósito, la confianza mutua y la comunicación abierta entre sus miembros.</p>
+                            <a href="#" class="btn btn-light">Conocer más</a>
+                        </div>
+                        <div class="col-md-6 img-content">
+                            <img src="https://images.unsplash.com/photo-1551836026-d5c8c2a6d7b1?auto=format&fit=crop&w=600&q=80" alt="Trabajo en equipo" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Controles -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#textImageCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#textImageCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Content Section -->
+<section class="content-section">
+    <!-- Sección 1: Entrega de Poder -->
+    <div class="container">
+        <h2 class="section-title">Sección 1: Entrega de Poder</h2>
+        
+        <!-- Pregunta 1 -->
+        <div class="content-container">
+            <div class="col-md-6 content-text">
+                <h4><span class="badge rounded-circle bg-primary fs-6">1</span> ¿Qué se entiende por "entrega de poder" en el liderazgo y por qué va más allá de solo delegar tareas?</h4>
+                <p>La <strong>entrega de poder</strong> (empowerment) implica transferir autoridad, responsabilidad y autonomía a los colaboradores para que tomen decisiones significativas. Va más allá de la delegación porque no solo asigna tareas específicas, sino que <strong>confiere autoridad real, recursos y capacidad de decisión</strong>, fomentando la propiedad, la iniciativa y el desarrollo profesional. Mientras la delegación se enfoca en "hacer", la entrega de poder se centra en "decidir y actuar con autonomía".</p>
+            </div>
+            <div class="col-md-6 content-image">
+                <img src="https://images.unsplash.com/photo-1565689228866-1d7db786613e?auto=format&fit=crop&w=600&q=80" alt="Entrega de poder" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="content-container">
+            <div class="col-md-6 content-image">
+                <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=600&q=80" alt="Transformación organizacional" class="img-fluid">
+            </div>
+            <div class="col-md-6 content-text">
+                <h4><span class="badge rounded-circle bg-primary fs-6">2</span> Explica cómo la entrega de poder transforma la dinámica organizacional según el documento.</h4>
+                <p>La entrega de poder transforma la dinámica organizacional al <strong>cambiar relaciones jerárquicas tradicionales por estructuras más colaborativas y horizontales</strong>. Promueve una cultura de confianza donde los empleados se sienten dueños de sus resultados, aumentando la proactividad, la innovación y la adaptabilidad. Esta transformación reduce la dependencia del líder para cada decisión, acelera los procesos, mejora la satisfacción laboral y desarrolla capacidades de liderazgo en todos los niveles de la organización.</p>
+            </div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="content-container">
+            <div class="col-md-6 content-text">
+                <h4><span class="badge rounded-circle bg-primary fs-6">3</span> Menciona tres mecanismos esenciales para una entrega efectiva de poder a nivel grupal.</h4>
+                <p>
+                    <strong>1. Claridad de límites y expectativas:</strong> Definir claramente el alcance de la autoridad, los recursos disponibles y los resultados esperados.<br><br>
+                    <strong>2. Desarrollo de competencias:</strong> Proporcionar formación continua y herramientas necesarias para que el equipo pueda ejercer su autonomía efectivamente.<br><br>
+                    <strong>3. Sistemas de apoyo y retroalimentación:</strong> Establecer mecanismos de seguimiento, mentoría y evaluación que permitan el aprendizaje continuo sin microgestión.
+                </p>
+            </div>
+            <div class="col-md-6 content-image">
+                <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&w=600&q=80" alt="Mecanismos de empoderamiento" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección 2: Formas de Funcionamiento de los Grupos de Trabajo -->
+    <div class="container">
+        <h2 class="section-title">Sección 2: Formas de Funcionamiento de los Grupos de Trabajo</h2>
+        
+        <!-- Pregunta 4 -->
+        <div class="content-container">
+            <div class="col-md-6 content-image">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80" alt="Estilos de liderazgo" class="img-fluid">
+            </div>
+            <div class="col-md-6 content-text">
+                <h4><span class="badge rounded-circle bg-primary fs-6">4</span> Describe las características principales de los estilos de liderazgo: autocrático, democrático, delegativo y transformacional.</h4>
+                <p>
+                    <strong>Autocrático:</strong> El líder toma decisiones unilateralmente, controla estrechamente el trabajo y espera obediencia. Eficaz en crisis pero limita la creatividad.<br><br>
+                    <strong>Democrático:</strong> Fomenta la participación del equipo en la toma de decisiones, valora el consenso y promueve la colaboración.<br><br>
+                    <strong>Delegativo (Laissez-faire):</strong> Otorga alta autonomía al equipo, interviene mínimamente y confía en la autogestión.<br><br>
+                    <strong>Transformacional:</strong> Inspira y motiva mediante una visión compartida, fomenta el crecimiento personal y promueve cambios innovadores.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="content-container">
+            <div class="col-md-6 content-text">
+                <h4><span class="badge rounded-circle bg-primary fs-6">5</span> ¿Qué tipo de estructura de grupo favorece la innovación y el desarrollo continuo del potencial humano?</h4>
+                <p>Las <strong>estructuras organizativas horizontales y en red</strong> favorecen significativamente la innovación y el desarrollo del potencial humano. Estas estructuras caracterizadas por <strong>equipos multidisciplinarios, comunicación abierta, autonomía operativa y relaciones colaborativas</strong> permiten el flujo libre de ideas, fomentan la experimentación y facilitan el aprendizaje continuo. Los modelos ágiles, las organizaciones que aprenden y los equipos autodirigidos crean entornos donde la creatividad florece y las personas pueden desarrollar todo su potencial.</p>
+            </div>
+            <div class="col-md-6 content-image">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80" alt="Estructuras innovadoras" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección 3: Trabajo en Equipo -->
+    <div class="container">
+        <h2 class="section-title">Sección 3: Trabajo en Equipo</h2>
+        
+        <!-- Pregunta 6 -->
+        <div class="content-container">
+            <div class="col-md-6 content-image">
+                <img src="https://images.unsplash.com/photo-1551836026-d5c8c2a6d7b1?auto=format&fit=crop&w=600&q=80" alt="Beneficios del trabajo en equipo" class="img-fluid">
+            </div>
+            <div class="col-md-6 content-text">
+                <h4><span class="badge rounded-circle bg-primary fs-6">6</span> Enumera tres beneficios que aporta el trabajo en equipo dentro de las organizaciones modernas.</h4>
+                <p>
+                    <strong>1. Sinergia y creatividad aumentada:</strong> La diversidad de perspectivas genera soluciones más innovadoras que las que individuos trabajarían por separado.<br><br>
+                    <strong>2. Mayor adaptabilidad y resiliencia:</strong> Los equipos pueden responder más efectivamente a cambios del entorno al combinar diferentes habilidades y experiencias.<br><br>
+                    <strong>3. Desarrollo profesional acelerado:</strong> Los miembros aprenden unos de otros, adquieren nuevas competencias y desarrollan habilidades interpersonales esenciales.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pregunta 7 -->
+        <div class="content-container">
+            <div class="col-md-6 content-text">
+                <h4><span class="badge rounded-circle bg-primary fs-6">7</span> Según el documento, ¿cuáles son las tres condiciones básicas necesarias para el éxito en el trabajo en equipo? Explica brevemente cada una.</h4>
+                <p>
+                    <strong>1. Propósito común claro:</strong> Todos los miembros deben comprender y comprometerse con objetivos compartidos y significativos que guíen sus esfuerzos colectivos.<br><br>
+                    <strong>2. Confianza y respeto mutuo:</strong> Un ambiente psicológicamente seguro donde los miembros se sienten cómodos expresando ideas, cometiendo errores y desafiando el status quo.<br><br>
+                    <strong>3. Comunicación efectiva y procesos definidos:</strong> Canales abiertos de comunicación, normas de funcionamiento establecidas y mecanismos para la toma de decisiones y resolución de conflictos.
+                </p>
+            </div>
+            <div class="col-md-6 content-image">
+                <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&w=600&q=80" alt="Condiciones para el éxito" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección 4: Tipos y Compromiso del Equipo -->
+    <div class="container">
+        <h2 class="section-title">Sección 4: Tipos y Compromiso del Equipo</h2>
+        
+        <!-- Pregunta 8 -->
+        <div class="content-container">
+            <div class="col-md-6 content-image">
+                <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=600&q=80" alt="Tipos de equipos" class="img-fluid">
+            </div>
+            <div class="col-md-6 content-text">
+                <h4><span class="badge rounded-circle bg-primary fs-6">8</span> Diferencia entre un equipo funcional, autodirigido y virtual. Menciona un ejemplo de aplicación para cada uno.</h4>
+                <p>
+                    <strong>Equipo Funcional:</strong> Estructura tradicional con jerarquía clara y miembros del mismo departamento. <em>Ejemplo: Departamento de marketing desarrollando una campaña publicitaria.</em><br><br>
+                    <strong>Equipo Autodirigido:</strong> Alta autonomía, autogestionan su trabajo y toman decisiones colectivas. <em>Ejemplo: Equipo de desarrollo ágil que planifica sus sprints sin supervisión directa.</em><br><br>
+                    <strong>Equipo Virtual:</strong> Miembros geográficamente dispersos que colaboran mediante tecnología. <em>Ejemplo: Consultores internacionales coordinando un proyecto global mediante plataformas digitales.</em>
+                </p>
+            </div>
+        </div>
+
+        <!-- Pregunta 9 -->
+        <div class="content-container">
+            <div class="col-md-6 content-text">
+                <h4><span class="badge rounded-circle bg-primary fs-6">9</span> ¿Cómo se relaciona la claridad de propósito con el compromiso genuino de los miembros del equipo?</h4>
+                <p>La <strong>claridad de propósito</strong> es fundamental para el <strong>compromiso genuino</strong> porque proporciona significado y dirección al trabajo del equipo. Cuando los miembros comprenden claramente el "por qué" detrás de sus esfuerzos, conectan emocionalmente con los objetivos, desarrollan un sentido de propiedad y están dispuestos a invertir discretionary effort (esfuerzo adicional voluntario). Un propósito bien definido actúa como brújula moral que guía la toma de decisiones, alinea comportamientos y sostiene la motivación durante desafíos.</p>
+            </div>
+            <div class="col-md-6 content-image">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80" alt="Propósito y compromiso" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección 5: Aplicación Práctica -->
+    <div class="container">
+        <h2 class="section-title">Sección 5: Aplicación Práctica</h2>
+        
+        <!-- Pregunta 10 -->
+        <div class="content-container">
+            <div class="col-md-6 content-image">
+                <img src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?auto=format&fit=crop&w=600&q=80" alt="Liderazgo en crisis" class="img-fluid">
+            </div>
+            <div class="col-md-6 content-text">
+                <h4><span class="badge rounded-circle bg-primary fs-6">10</span> Según el ejemplo del liderazgo en crisis durante la pandemia de COVID-19, ¿qué resultados se obtuvieron al delegar poder estratégicamente a los equipos?</h4>
+                <p>Durante la pandemia, las organizaciones que <strong>delegaron poder estratégicamente</strong> obtuvieron resultados significativos: <strong>respuesta más rápida y adaptativa</strong> a circunstancias cambiantes, <strong>solución creativa de problemas</strong> desde múltiples perspectivas, y <strong>mayor resiliencia organizacional</strong>. Los equipos empoderados desarrollaron protocolos de seguridad innovadores, implementaron rápidamente el trabajo remoto y mantuvieron la productividad mediante la autogestión. Este enfoque no solo mitigó el impacto de la crisis, sino que generó aprendizajes duraderos sobre agilidad organizacional y confianza en la capacidad de los equipos.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Instituto Tecnológico</h3>
+                <p>Formando profesionales de excelencia desde 1985.</p>
+                <p>Comprometidos con la educación de calidad.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📍 Av. Universidad #123, Ciudad</p>
+                <p>📞 +1 (555) 123-4567</p>
+                <p>📧 info@instituto.edu</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <a href="#">Portal Estudiantil</a>
+                <a href="#">Biblioteca Virtual</a>
+                <a href="#">Calendario Académico</a>
+                <a href="#">Bolsa de Trabajo</a>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2023 Instituto Tecnológico. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
